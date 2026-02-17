@@ -228,20 +228,11 @@ img {
     position: relative;
     height: 500px;
     min-height: 60vh;
-    background-image: url('./assests/Banner Image from Mission Restart.png');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url('./assests/Banner Image from Mission Restart.png');
     background-size: cover;
     background-position: top center;
     display: flex;
     align-items: center;
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
 }
 
 .hero-content {
