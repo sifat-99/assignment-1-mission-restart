@@ -15,6 +15,7 @@ let cart = JSON.parse(localStorage.getItem('swiftcart_cart')) || [];
 
 async function init() {
     updateCartUI();
+    initScrollSpy();
     fetchCategories();
 
     try {
@@ -206,6 +207,29 @@ function toggleMenu() {
 function checkout() {
     if (cart.length === 0) return;
     alert("Checkout functionality coming soon!");
+}
+
+function initScrollSpy() {
+    const sections = document.querySelectorAll('section, header#home, footer#contact');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (pageYOffset >= (sectionTop - 150)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(current)) {
+                link.classList.add('active');
+            }
+        });
+    });
 }
 
 init();
