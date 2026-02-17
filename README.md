@@ -47,3 +47,6 @@ This project contains HTML, CSS, and JS files.
 
 ## Styles
 The project uses custom CSS for styling.
+
+## Features
+Interactive elements are handled by script.js.
