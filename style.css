@@ -228,9 +228,9 @@ img {
     position: relative;
     height: 500px;
     min-height: 60vh;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url('./assests/Banner Image from Mission Restart.png');
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.1)), url('./assests/Banner Image from Mission Restart.png');
     background-size: cover;
-    background-position: top center;
+    background-position: center;
     display: flex;
     align-items: center;
 }
@@ -239,7 +239,7 @@ img {
     position: relative;
     z-index: 1;
     color: var(--white);
-    max-width: 600px;
+    max-width: 900px;
 }
 
 .hero h1 {
