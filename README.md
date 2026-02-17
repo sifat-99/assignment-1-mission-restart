@@ -44,3 +44,6 @@ API থেকে ডেটা ফেচ করার সময় এটি ক�
 
 ## Project Structure
 This project contains HTML, CSS, and JS files.
+
+## Styles
+The project uses custom CSS for styling.
